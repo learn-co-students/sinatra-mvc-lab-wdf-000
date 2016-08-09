@@ -11,12 +11,11 @@ class PigLatinizer
     if start_with_vowel
       word + "way"
     else
-      # word_array = word.split(/[aeiou]/)
+      # word_array = word.split((/[aeiou].*)/)
       # first_consonants = word_array.shift
       # final_word = word_array.join("") + first_consonants + "ay"
 
       word.split(/([aeiou].*)/).reverse.join("") + "ay"
-      # binding.pry
     end
   end
 
