@@ -23,4 +23,5 @@ describe 'class PigLatinizer' do
     expect(words.to_pig_latin("i love programming")).to eq("iway ovelay ogrammingpray") 
   end
   
+  
 end
