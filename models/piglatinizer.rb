@@ -20,12 +20,7 @@ class PigLatinizer
 		end
 	end
 
-	def to_pig_latin(words)
-		words_array = words.split(" ")
-		piglatinized_array = []
-		words_array.each do |word|
-			piglatinized_array << self.piglatinize(word)
-		end
-		piglatinized_array.join(" ")
+	def to_pig_latin(string)
+		string.split.collect{|word| piglatinize(word)}.join(" ")
 	end
 end
